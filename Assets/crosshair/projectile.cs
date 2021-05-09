@@ -28,4 +28,9 @@ public class projectile : MonoBehaviour
         Destroy(parcalanma, 1);
         
     }
+    
+    
+    
+    
+    
 }
