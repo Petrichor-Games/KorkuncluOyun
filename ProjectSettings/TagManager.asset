@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - platform
+  - ruh_kapsul
+  - anakarakter
+  - dusman
+  - arkaplan
   layers:
   - Default
   - TransparentFX

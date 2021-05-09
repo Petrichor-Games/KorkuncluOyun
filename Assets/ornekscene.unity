@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 1133228699}
   m_Layer: 0
   m_Name: arkplan
-  m_TagString: Untagged
+  m_TagString: arkaplan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,6 +671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166266018406649930, guid: 21fe0b30027a3ec4b8f61991803073eb,
+        type: 3}
+      propertyPath: m_TagString
+      value: dusman
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21fe0b30027a3ec4b8f61991803073eb, type: 3}
@@ -1204,6 +1209,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3166266018406649930, guid: 21fe0b30027a3ec4b8f61991803073eb,
+        type: 3}
+      propertyPath: m_TagString
+      value: anakarakter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21fe0b30027a3ec4b8f61991803073eb, type: 3}
 --- !u!1001 &5282572183589701302
@@ -1217,6 +1227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Square
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648504087078881871, guid: ce1ce071bf046f14a9b721daff85b77a,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 5258880403142984568, guid: ce1ce071bf046f14a9b721daff85b77a,
         type: 3}
