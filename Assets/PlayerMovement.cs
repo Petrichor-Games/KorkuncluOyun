@@ -8,8 +8,16 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jump;
     float moveVelocity;
+    private Rigidbody2D rgb;
 
- 
+    void Start()
+    {
+        rgb = GetComponent<Rigidbody2D>();
+
+
+    }
+
+
 
     void Update()
     {
@@ -28,7 +36,13 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(2, 2, 2);
         }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        if (Input.GetButtonDown("Jump") && Mathf.Approximately(rgb.velocity.y,0))
+        {
+            rgb.AddForce(Vector3.up * jump, ForceMode2D.Impulse);
+
+        }
+
+        rgb.velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
     }
     
