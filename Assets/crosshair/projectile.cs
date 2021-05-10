@@ -7,6 +7,8 @@ public class projectile : MonoBehaviour
 
     public float speed;
     public float lifeTime;
+    public float distance;
+    public LayerMask whatIsSolid;
 
     public GameObject destroyEffect;
 
@@ -15,9 +17,20 @@ public class projectile : MonoBehaviour
         Invoke("DestroyProjectile", lifeTime);
     }
 
+    
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
+        if (hitInfo.collider != null)
+        {
+            if(hitInfo.collider.CompareTag("Enemy"))
+            {
+                Debug.Log("Enemy Must Take Damage !");
+            }
+            DestroyProjectile();
+        }
+
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 
