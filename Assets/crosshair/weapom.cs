@@ -29,11 +29,12 @@ public class weapom : MonoBehaviour
         //Ateþleme Sistemi
         if(timeBtwShots <= 0)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && itemLoot.soulAmount > 0)
             {
                 var toplam = Quaternion.Euler(0f, 0f, rotZ + offset);
                 Instantiate(projectile, shotPoint.position, toplam);
                 timeBtwShots = startTimeBtwShots;
+                itemLoot.soulAmount -= 1;
             }
         }
 
