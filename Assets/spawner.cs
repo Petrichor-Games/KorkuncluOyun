@@ -13,6 +13,7 @@ public class spawner : MonoBehaviour
     {
         spawnAllowed = true;
         InvokeRepeating("SpawnSoul", 0f, 1f);
+        
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class spawner : MonoBehaviour
             randomSpawnPoint = Random.Range(0, spawnPoints.Length);
             randomsoul = Random.Range(0, soul.Length);
             Instantiate(soul[randomsoul], spawnPoints[randomSpawnPoint].position, Quaternion.identity);
+            spawnAllowed = false;
         }
     }
 }

@@ -18,10 +18,11 @@ public class soul : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag=="anakarakter")
+        if (other.CompareTag("anakarakter"))
         {
             itemLoot.soulAmount += 1;
             Destroy(gameObject);
+            spawner.spawnAllowed = true;
         }
     }
 }

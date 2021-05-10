@@ -9,12 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public float jump;
     float moveVelocity;
     private Rigidbody2D rgb;
+    private Rigidbody2D _rigidbody2D;
 
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
-
-
     }
 
 
@@ -42,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        rgb.velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        rgb.velocity = new Vector2(moveVelocity, rgb.velocity.y);
 
     }
     
