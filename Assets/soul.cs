@@ -22,6 +22,7 @@ public class soul : MonoBehaviour
         {
             itemLoot.soulAmount += 1;
             Destroy(gameObject);
+            spawner.spawnAllowed = true;
         }
     }
 }
