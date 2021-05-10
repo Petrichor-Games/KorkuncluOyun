@@ -1197,7 +1197,10 @@ MonoBehaviour:
   - {fileID: 773006379}
   - {fileID: 1568662254}
   soul:
-  - {fileID: 6853153352405016903, guid: f6ec99879e7de3a4a83e54a5b9be0733, type: 3}
+  - {fileID: 5836147957526687626, guid: b75563ae0d0177e4181916388ac0853d, type: 3}
+  - {fileID: 5974787754231605363, guid: b9e258d9185702b40ab44a96b9ac211b, type: 3}
+  - {fileID: 8564737869225363410, guid: 2abfc9b74b473e74bb8afdd9ac229e24, type: 3}
+  - {fileID: 939551822202706799, guid: 501542fea72fab14cad49b909a90e69d, type: 3}
 --- !u!4 &1301721470
 Transform:
   m_ObjectHideFlags: 0
