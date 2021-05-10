@@ -16,9 +16,7 @@ public class Boss_AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anakarakter = GameObject.FindGameObjectWithTag("anakarakter").transform;
-
-
+       
 
     }
 }
