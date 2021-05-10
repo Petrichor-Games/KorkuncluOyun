@@ -10,7 +10,7 @@ public class Boss_run : StateMachineBehaviour
     Rigidbody2D rb;
     public float speed = 2.5f;
     private Vector3 basPos;
-    public float attackRange = 3f;
+    public float attackRange = 12f;
 
     void Start()
     {
@@ -37,11 +37,11 @@ public class Boss_run : StateMachineBehaviour
         Vector3 newPos= Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         Vector3 hedef = Vector3.MoveTowards(rb.position, basPos, speed * Time.fixedDeltaTime);
 
-        if ( Mathf.Abs(boss.position.x - anakarakter.position.x) < 4) {
+        if( Mathf.Abs(boss.position.x - anakarakter.position.x) < 10) {
              rb.MovePosition(newPos);
         }
 
-        if (Vector2.Distance(anakarakter.position,rb.position) <= attackRange)
+        if (Mathf.Abs(boss.position.x - anakarakter.position.x) < 6)
         {
             animator.SetTrigger("Attack"); 
 
