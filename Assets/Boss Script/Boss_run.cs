@@ -39,11 +39,11 @@ public class Boss_run : StateMachineBehaviour
         Vector3 newPos= Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         Vector3 hedef = Vector3.MoveTowards(rb.position, basPos, speed * Time.fixedDeltaTime);
 
-        if( Mathf.Abs(boss.position.x - anakarakter.position.x) < 10) {
+        if( Mathf.Abs(boss.position.x - anakarakter.position.x) < 12) {
              rb.MovePosition(newPos);
         }
 
-        if (Mathf.Abs(boss.position.x - anakarakter.position.x) < 6)
+        if (Mathf.Abs(boss.position.x - anakarakter.position.x) < 9)
         {
             animator.SetTrigger("Attack");
             bosss.GetComponent<Boss_AI>().ShootToPlayer();
