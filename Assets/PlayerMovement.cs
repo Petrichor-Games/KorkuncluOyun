@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rgb;
     private Rigidbody2D _rigidbody2D;
 
+    public GameObject HitScreen;
+    
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
@@ -43,6 +46,25 @@ public class PlayerMovement : MonoBehaviour
 
         rgb.velocity = new Vector2(moveVelocity, rgb.velocity.y);
 
+
+        if (HitScreen !=null)
+        {
+            if (HitScreen.GetComponent<Image>().color.a > 0)
+            {
+                var color = HitScreen.GetComponent<Image>().color;
+                color.a -= 0.01f;
+                HitScreen.GetComponent<Image>().color = color;
+            }
+        }
+        
+
     }
-    
+
+    public void TakeDamage(int amount)
+    {
+        //TODO
+        var color = HitScreen.GetComponent<Image>().color;
+        color.a = 0.8f;
+        HitScreen.GetComponent<Image>().color = color;
+    }
 }

@@ -24,9 +24,9 @@ public class projectileEnemy : MonoBehaviour
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
         if (hitInfo.collider != null)
         {
-            if(hitInfo.collider.CompareTag("Enemy"))
+            if(hitInfo.collider.CompareTag("anakarakter"))
             {
-                GameObject.FindGameObjectWithTag("Enemy").GetComponent<Boss_AI>().TakeDamage(20);
+                GameObject.FindGameObjectWithTag("anakarakter").GetComponent<PlayerMovement>().TakeDamage(20);
             }
             DestroyProjectile();
         }
