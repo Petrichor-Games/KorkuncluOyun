@@ -11,6 +11,7 @@ TagManager:
   - arkaplan
   - Enemy
   - soul
+  - oyunbitti
   layers:
   - Default
   - TransparentFX
