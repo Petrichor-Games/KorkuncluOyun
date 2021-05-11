@@ -8,7 +8,11 @@ public class Boss_AI : MonoBehaviour
     
     public float BossHealth;
     private GameObject yazi;
+    public float offset;
 
+    
+    public GameObject projectile;
+    public Transform shotPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +34,18 @@ public class Boss_AI : MonoBehaviour
             yazi.SetActive(true);
             Destroy(boss);
         }
-        
-        Debug.Log(BossHealth);
     }
+
+    public void ShootToPlayer()
+    {
+        var player = GameObject.FindWithTag("anakarakter");
+        Vector3 difference = player.transform.position - transform.position;
+        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        
+        
+        var toplam = Quaternion.Euler(0f, 0f, rotZ + offset);
+        Instantiate(projectile, shotPoint.position, toplam);
+    }
+    
     
 }

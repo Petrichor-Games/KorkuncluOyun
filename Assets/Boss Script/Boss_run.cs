@@ -12,6 +12,7 @@ public class Boss_run : StateMachineBehaviour
     private Vector3 basPos;
     public float attackRange = 12f;
 
+
     void Start()
     {
         basPos = new Vector3(26f, 4.56f, 0.15f);
@@ -29,7 +30,8 @@ public class Boss_run : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        boss = GameObject.FindGameObjectWithTag("Enemy").transform;
+        var bosss = GameObject.FindGameObjectWithTag("Enemy");
+        boss = bosss.transform;
         anakarakter = GameObject.FindGameObjectWithTag("anakarakter").transform;
         rb = animator.GetComponent<Rigidbody2D>();
 
@@ -43,7 +45,8 @@ public class Boss_run : StateMachineBehaviour
 
         if (Mathf.Abs(boss.position.x - anakarakter.position.x) < 6)
         {
-            animator.SetTrigger("Attack"); 
+            animator.SetTrigger("Attack");
+            bosss.GetComponent<Boss_AI>().ShootToPlayer();
 
         }
 
