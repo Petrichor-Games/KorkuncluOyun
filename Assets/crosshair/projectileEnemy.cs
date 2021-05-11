@@ -30,17 +30,6 @@ public class projectileEnemy : MonoBehaviour
         {
             DestroyProjectile();
         }
-       // RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
-       // if (hitInfo.collider != null)
-      //  {
-        //    if(hitInfo.collider.CompareTag("anakarakter"))
-          //  {
-                
-           // }
-            //DestroyProjectile();
-        //}
-
-    
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

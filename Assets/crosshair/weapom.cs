@@ -12,11 +12,7 @@ public class weapom : MonoBehaviour
 
     private float timeBtwShots;
     public float startTimeBtwShots;
-
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
