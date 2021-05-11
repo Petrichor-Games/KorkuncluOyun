@@ -12,7 +12,6 @@ TagManager:
   - Enemy
   - soul
   - oyunbitti
-<<<<<<< HEAD
   - Stone
   - "Z\u0131plamaPlatformuu"
   - Agac
@@ -23,9 +22,6 @@ TagManager:
   - Kedi_
   - Kaya1
   - "\u0130pp"
-=======
-  - Habitat
->>>>>>> eeb6c9e28408aa8b92e2cd47e051f5e051fbc8a5
   layers:
   - Default
   - TransparentFX
@@ -37,7 +33,6 @@ TagManager:
   - Player
   - Enemy
   - Environment
-<<<<<<< HEAD
   - Platform
   - Stone1
   - "Z\u0131plamaPlatormu"
@@ -49,19 +44,6 @@ TagManager:
   - Kedii
   - Kayaa1
   - "\u0130p1"
-=======
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
->>>>>>> eeb6c9e28408aa8b92e2cd47e051f5e051fbc8a5
   - 
   - 
   - 
@@ -86,7 +68,6 @@ TagManager:
   - name: Background
     uniqueID: 3487887175
     locked: 0
-<<<<<<< HEAD
   - name: Tass
     uniqueID: 3985044771
     locked: 0
@@ -117,5 +98,3 @@ TagManager:
   - name: Kedi
     uniqueID: 1523417871
     locked: 0
-=======
->>>>>>> eeb6c9e28408aa8b92e2cd47e051f5e051fbc8a5
