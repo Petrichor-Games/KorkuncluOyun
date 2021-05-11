@@ -11,19 +11,20 @@ public class PlayerMovement : MonoBehaviour
     float moveVelocity;
     private Rigidbody2D rgb;
     private Rigidbody2D _rigidbody2D;
-
+    public int karaktercan;
     public GameObject HitScreen;
+    public Slider Canbar;
     
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
+        karaktercan = 100;
     }
 
 
 
     void Update()
     {
-      
         moveVelocity = 0;
 
         //Left Right Movement
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
         rgb.velocity = new Vector2(moveVelocity, rgb.velocity.y);
 
+        Canbar.value = karaktercan;
 
         if (HitScreen !=null)
         {
@@ -60,11 +62,21 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int damageAmount)
     {
         //TODO
         var color = HitScreen.GetComponent<Image>().color;
         color.a = 0.8f;
         HitScreen.GetComponent<Image>().color = color;
+            if (karaktercan > damageAmount)
+            {
+                karaktercan -= damageAmount;
+            }
+            else
+            {
+                var anakarakter = GameObject.FindGameObjectWithTag("anakarakter");
+                Destroy(anakarakter);
+            }
+        
     }
 }
