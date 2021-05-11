@@ -26,7 +26,7 @@ public class projectile : MonoBehaviour
         {
             if(hitInfo.collider.CompareTag("Enemy"))
             {
-                GameObject.FindGameObjectWithTag("Enemy").GetComponent<Boss_AI>().TakeDamage(20);
+                GameObject.FindGameObjectWithTag("Enemy").GetComponent<enemybehaviour>().TakeDamage(20);
             }
             DestroyProjectile();
         }

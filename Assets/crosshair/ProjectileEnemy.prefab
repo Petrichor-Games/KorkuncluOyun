@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 55524038828985905}
   - component: {fileID: 6849146800680736773}
   - component: {fileID: 7144369597605327592}
+  - component: {fileID: 1487799973921837569}
   m_Layer: 0
   m_Name: ProjectileEnemy
   m_TagString: Untagged
@@ -103,3 +104,19 @@ MonoBehaviour:
     m_Bits: 640
   destroyEffect: {fileID: 1657798570406232, guid: 1b789a4a374f27f4ba6e1ff9f62c2d42,
     type: 3}
+--- !u!70 &1487799973921837569
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3754651635346300544}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 4.7599998, y: 4.4}
+  m_Direction: 0

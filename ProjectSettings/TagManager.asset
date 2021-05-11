@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - soul
   - oyunbitti
+  - Habitat
   layers:
   - Default
   - TransparentFX
