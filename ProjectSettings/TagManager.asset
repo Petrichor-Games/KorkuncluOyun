@@ -12,6 +12,11 @@ TagManager:
   - Enemy
   - soul
   - oyunbitti
+  - Stone
+  - "Z\u0131plamaPlatformuu"
+  - Agac
+  - sivri_tas
+  - Alev
   layers:
   - Default
   - TransparentFX
@@ -23,12 +28,12 @@ TagManager:
   - Player
   - Enemy
   - Environment
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Platform
+  - Stone1
+  - "Z\u0131plamaPlatormu"
+  - Agacc
+  - Tas
+  - Alevv
   - 
   - 
   - 
@@ -57,4 +62,22 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3487887175
+    locked: 0
+  - name: Tass
+    uniqueID: 3985044771
+    locked: 0
+  - name: Stone
+    uniqueID: 86456381
+    locked: 0
+  - name: Agacc
+    uniqueID: 989470077
+    locked: 0
+  - name: Platform1
+    uniqueID: 1705978115
+    locked: 0
+  - name: New Layer
+    uniqueID: 1241576331
+    locked: 0
+  - name: Ates
+    uniqueID: 2249322157
     locked: 0
