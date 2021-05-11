@@ -17,6 +17,11 @@ TagManager:
   - Agac
   - sivri_tas
   - Alev
+  - Sato
+  - Ruh
+  - Kedi_
+  - Kaya1
+  - "\u0130pp"
   layers:
   - Default
   - TransparentFX
@@ -34,11 +39,11 @@ TagManager:
   - Agacc
   - Tas
   - Alevv
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Satoo
+  - Ruhh
+  - Kedii
+  - Kayaa1
+  - "\u0130p1"
   - 
   - 
   - 
@@ -66,18 +71,30 @@ TagManager:
   - name: Tass
     uniqueID: 3985044771
     locked: 0
+  - name: Ates
+    uniqueID: 2249322157
+    locked: 0
   - name: Stone
     uniqueID: 86456381
+    locked: 0
+  - name: Ruh
+    uniqueID: 3505370663
     locked: 0
   - name: Agacc
     uniqueID: 989470077
     locked: 0
+  - name: "\u0130p_"
+    uniqueID: 213433849
+    locked: 0
+  - name: Satoo
+    uniqueID: 4169073131
+    locked: 0
   - name: Platform1
     uniqueID: 1705978115
     locked: 0
-  - name: New Layer
-    uniqueID: 1241576331
+  - name: Kaya_1
+    uniqueID: 2624108787
     locked: 0
-  - name: Ates
-    uniqueID: 2249322157
+  - name: Kedi
+    uniqueID: 1523417871
     locked: 0
