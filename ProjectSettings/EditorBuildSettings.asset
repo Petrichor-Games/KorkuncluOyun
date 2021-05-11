@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MainMenu.unity
+    guid: 0632c36eba1d19b4dbb3424e984c42e0
+  - enabled: 1
+    path: Assets/LostSoulLevel.unity
+    guid: 620789d1f146554458076a5f22fdeb28
   m_configObjects: {}
