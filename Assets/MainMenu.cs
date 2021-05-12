@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     }
     public void QuitGame()
     {
-        Debug.Log("Oyundan çýktýk");
+        Debug.Log("Oyundan Ciktik");
         Application.Quit();
     }
     public void ReturnToMainMenu()

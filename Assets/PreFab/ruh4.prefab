@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5947684661659285666}
   - component: {fileID: 7370959927171116475}
   - component: {fileID: 1534298603581480417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ruh4
   m_TagString: soul
   m_Icon: {fileID: 0}

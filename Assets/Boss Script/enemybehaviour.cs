@@ -39,6 +39,11 @@ public class enemybehaviour : MonoBehaviour
     
     void Update()
     {
+        if (Player !=null)
+        {
+            
+        
+        
         if (Vector3.Distance(transform.position, Player.position) < goingdistance && Vector3.Distance(transform.position , Player.position) > stoppingDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
@@ -60,7 +65,7 @@ public class enemybehaviour : MonoBehaviour
         {
             timebtwshots -= Time.deltaTime;
         }
-
+        }
     }
 
 }

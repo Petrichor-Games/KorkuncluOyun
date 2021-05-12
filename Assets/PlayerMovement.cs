@@ -14,11 +14,18 @@ public class PlayerMovement : MonoBehaviour
     public int karaktercan;
     public GameObject HitScreen;
     public Slider Canbar;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public AudioClip clip2;
+    public GameObject yazi;
+    public GameObject btnExit;
     
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
         karaktercan = 100;
+        yazi.SetActive(false);
+        btnExit.SetActive(false);
     }
 
 
@@ -58,10 +65,35 @@ public class PlayerMovement : MonoBehaviour
                 HitScreen.GetComponent<Image>().color = color;
             }
         }
-        
+
+        if (transform.position.y <= -12)
+        {
+            OldumMequ(true);
+        }
 
     }
 
+    public void OldumMequ(bool nassi)
+    {
+        var anakarakter = GameObject.FindGameObjectWithTag("anakarakter");
+        if (nassi)
+        {
+            audioSource.PlayOneShot(clip, 1f);
+            yazi.GetComponent<Text>().text = "Yırmaktasın";
+        }
+        else
+        {
+            audioSource.PlayOneShot(clip2, 1f);
+            yazi.GetComponent<Text>().text = "Zabadak";
+        }
+        
+        Destroy(anakarakter);
+        yazi.SetActive(true);
+        
+        btnExit.SetActive(true);
+    }
+    
+    
     public void TakeDamage(int damageAmount)
     {
         //TODO
@@ -74,8 +106,8 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                var anakarakter = GameObject.FindGameObjectWithTag("anakarakter");
-                Destroy(anakarakter);
+                karaktercan -= damageAmount;
+                OldumMequ(false);
             }
         
     }
