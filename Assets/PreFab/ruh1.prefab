@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6796334660866880157}
   - component: {fileID: 2283947130636412975}
   - component: {fileID: -8677790558389369016}
-  m_Layer: 7
+  m_Layer: 17
   m_Name: ruh1
   m_TagString: soul
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -789596633
   m_SortingLayer: 7
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d44566110c092414889e8e55928f7031, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
