@@ -38,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             moveVelocity = -speed;
-            transform.localScale = new Vector3(-2, 2, 2);
+            transform.localScale = new Vector3(-0.1679229f, 0.1237322f, 2);
         }
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             moveVelocity = speed;
-            transform.localScale = new Vector3(2, 2, 2);
+            transform.localScale = new Vector3(0.1679229f, 0.1237322f, 2);
         }
 
         if (Input.GetButtonDown("Jump") && Mathf.Approximately(rgb.velocity.y,0))
